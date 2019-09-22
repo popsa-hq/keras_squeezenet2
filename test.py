@@ -1,5 +1,5 @@
 import numpy as np
-from keras_squeezenet import SqueezeNet
+from keras_squeezenet_tf2 import SqueezeNet
 from tensorflow.keras.applications.imagenet_utils import preprocess_input, decode_predictions
 from tensorflow.keras.preprocessing import image
 from tensorflow import keras

@@ -1,6 +1,8 @@
-# keras-squeezenet [![Build Status](https://travis-ci.org/rcmalli/keras-squeezenet.svg?branch=master)](https://travis-ci.org/rcmalli/keras-squeezenet)
+# Keras-squeezenet2 
 
-# Keras-squeezenet2
+[![CircleCI](https://circleci.com/gh/daviddexter/keras_squeezenet2.svg?style=svg)](https://circleci.com/gh/daviddexter/keras_squeezenet2)
+
+
 
 SqueezeNet v1.1 Implementation using tf.Keras for tensorflow version 2 
 
@@ -9,28 +11,24 @@ This is a rework of the original work by [Refik Can MALLI](https://github.com/rc
 
 
 ~~~bash
-# Most Recent One
-pip install git+https://github.com/rcmalli/keras-squeezenet.git
-
+git clone https://github.com/daviddexter/keras_squeezenet2
+pip install -q keras_squeezenet2/
 ~~~
 
-### News
-
-- Project is now up-to-date with the new Keras version (2.0).
-
-- Old Implementation is still available at 'keras1' branch but not updated.
 
 ### Library Versions
 
 - Tensorflow v2.rc1
 
+
+
 ### Example Usage
 
 ~~~python
 import numpy as np
-from keras_squeezenet import SqueezeNet
-from keras.applications.imagenet_utils import preprocess_input, decode_predictions
-from keras.preprocessing import image
+from keras_squeezenet_tf2 import SqueezeNet
+from tensorflow.keras.applications.imagenet_utils import preprocess_input, decode_predictions
+from tensorflow.keras.preprocessing import image
 
 model = SqueezeNet()
 
@@ -47,7 +45,7 @@ print('Predicted:', decode_predictions(preds))
 
 ### References
 
-1) [Keras Framework](www.keras.io)
+1) [Tensorflow Framework](www.tensorflow.org)
 
 2) [SqueezeNet Official Github Repo](https://github.com/DeepScale/SqueezeNet)
 
