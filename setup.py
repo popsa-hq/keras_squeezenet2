@@ -8,6 +8,4 @@ setup(name='keras_squeezenet2',
       author_email = "dmwangimail@gmail.com",
       license='MIT',
       packages=['keras_squeezenet_tf2'],
-      zip_safe=False,
-      install_requires=['tensorflow==2.0.0',
-                        'pyyaml'])
+      zip_safe=False)
